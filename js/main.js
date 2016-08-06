@@ -14,9 +14,7 @@ $(function () {
     location.href= "/bekher-cv-ext.pdf";
   });
   $("#parapit").click(function () {
-    location.href= "https://parapit.com/";
+    location.href= "http://parapit.com/";
   });
 });
-
-// @media height isn't cooperating
 
