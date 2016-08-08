@@ -24,13 +24,10 @@ fi
 
 if [ "$DO_CV_BUILD" = true ]; then
     cd $CV_DIR/
-    pwd
     rm CV.pdf
     $CV_BUILD_CMD $CV_BUILD_ARGS
     cd ..
 fi
-
-mv -f $CV_DIR/{CV.pdf,$CV_PDF_PATH}
 
 if [ -d $BUILD_DIR ]; then
     echo "removing existing build directory"
@@ -44,6 +41,6 @@ cp -R js $BUILD_DIR/.
 cp -R img $BUILD_DIR/.
 cp -R css $BUILD_DIR/.
 cp -R fonts $BUILD_DIR/.
-cp $CV_DIR/$CV_PDF_PATH $BUILD_DIR/.
+cp $CV_DIR/CV.pdf $BUILD_DIR/$CV_PDF_PATH
 
 echo "bekher.net build complete"
