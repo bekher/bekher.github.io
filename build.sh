@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set to false if mklatex, xelatex and friends are not present
-DO_CV_BUILD=false
+DO_CV_BUILD=true
 
 BUILD_DIR=build
 CV_DIR=cv-src
@@ -23,6 +23,7 @@ if [ $? -ne 0 ]; then
 fi
 
 if [ "$DO_CV_BUILD" = true ]; then
+    rm $CV_PDF_PATH
     cd $CV_DIR/
     rm CV.pdf
     $CV_BUILD_CMD $CV_BUILD_ARGS
@@ -43,4 +44,4 @@ cp -R css $BUILD_DIR/.
 cp -R fonts $BUILD_DIR/.
 cp $CV_DIR/CV.pdf $BUILD_DIR/$CV_PDF_PATH
 
-echo "bekher.net build complete"
+echo "bekher.me build complete"

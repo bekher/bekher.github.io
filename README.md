@@ -1,6 +1,6 @@
 # bekher.net
 
-See how it looks in production: [bekher.net](https://bekher.net/)
+See how it looks in production: [bekher.me](https://bekher.me/)
 
 To Build:
 
