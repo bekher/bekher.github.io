@@ -62,12 +62,13 @@ i.fa:hover {
     text-align:center;
 }
 
-#parapit-box {
-    padding-top: 30px;
+#quuly-box {
+    margin-top: 30px;
 }
 
-#parapit {
-    width: 225px;
+#quuly {
+    margin-top: 20px;
+    width: 130px;
 }
 
 /* hover.css effects */
@@ -106,7 +107,7 @@ i.fa:hover {
     }
 }
 @media (orientation: landscape) and (max-height: 520px) {
-    #parapit-box {
+    #quuly-box {
         display: none;
     }
 }
